@@ -1,0 +1,10 @@
+<div class="panel-heading">Place Componenet</div>   
+<div class="pannel" dnd-droppable (onDropSuccess)="onDrop($event)">
+    <div class="panel-body">
+        <div *ngFor="let obj of transferData">
+            <div class="panel-item">
+                {{obj.component}}
+            </div>
+        </div>
+    </div>
+</div>
